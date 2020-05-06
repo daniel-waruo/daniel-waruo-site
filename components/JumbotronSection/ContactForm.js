@@ -9,6 +9,9 @@ export default class ContactForm extends React.PureComponent {
     message: '',
     alerts: []
   };
+  reset = () => {
+    document.getElementById("contact-me-form").reset()
+  };
 
   submitHandler = e => {
     e.preventDefault();
@@ -24,6 +27,7 @@ export default class ContactForm extends React.PureComponent {
             message: '',
             alerts: [data.message]
           });
+          this.reset();
           console.log("email sent successfully");
         },
         error: data => {
@@ -43,20 +47,20 @@ export default class ContactForm extends React.PureComponent {
     return (
       <MDBCard>
         <MDBCardBody className="z-depth-2">
-          <form onSubmit={this.submitHandler} method={"POST"}>
+          <form onSubmit={this.submitHandler} method={"POST"} id={"contact-me-form"}>
             {alertMessages}
             <div className="text-center">
               <h3 className="dark-grey-text">Email me:</h3>
               <hr/>
             </div>
             <MDBInput icon={"user"} type={"text"} label={"Your Full Name"} required group
-                      valueDefault={this.state.name}
+                      value={this.state.name}
                       onChange={e => this.setState({name: e.target.value})}/>
             <MDBInput icon={"envelope"} type={"email"} label={"Your Email"} required group
-                      valueDefault={this.state.email}
+                      value={this.state.email}
                       onChange={e => this.setState({email: e.target.value})}/>
             <MDBInput icon={"pen"} type={"textarea"} rows={"4"} label={"Your Message"} required group
-                      valueDefault={this.state.message}
+                      value={this.state.message}
                       onChange={e => this.setState({message: e.target.value})}/>
             <div className="text-center">
               <MDBBtn color={"indigo"} className={"rounded-pill"} type={"submit"} outline>
