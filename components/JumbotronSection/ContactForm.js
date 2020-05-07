@@ -45,7 +45,7 @@ export default class ContactForm extends React.PureComponent {
         </MDBAlert>
       ));
     return (
-      <MDBCard>
+      <MDBCard className={"h-100"}>
         <MDBCardBody className="z-depth-2">
           <form onSubmit={this.submitHandler} method={"POST"} id={"contact-me-form"}>
             {alertMessages}

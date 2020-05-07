@@ -1,7 +1,7 @@
 import React from 'react'
 import {MDBAnimation, MDBCol, MDBMask, MDBRow} from 'mdbreact'
 import PictureCard from './PictureCard'
-import ContactForm from './ContactForm'
+import ContactForm from "./ContactForm";
 
 export default () => {
   const backgroundStyle = {
@@ -18,13 +18,13 @@ export default () => {
         <div className={"view f-view"}>
           <MDBMask overlay={"indigo-strong"} className="flex-center">
           </MDBMask>
-          <MDBRow className="pt-lg-5 mt-lg-5 h-100" around>
-            <MDBCol size={"8"} sm={"6"} md={"3"} className="mb-5 mt-md-0 mt-5 white-text text-center text-md-left">
-              <MDBAnimation delay={"0.3"} type={"fadeInLeft"}>
+          <MDBRow className="h-100" around>
+            <MDBCol size={"10"} sm={"8"} md={"5"} lg={"4"} xl={"3"} className="mt-5 pt-3 pt-md-5 mb-5 white-text text-center text-md-left">
+              <MDBAnimation delay={"0.2"} type={"fadeInLeft"}>
                 <PictureCard/>
               </MDBAnimation>
             </MDBCol>
-            <MDBCol md={"6"} xl={"5"} className="mb-4">
+            <MDBCol size={"10"} sm={"8"} md={"6"} xl={"5"} className="mt-md-5  pt-md-5">
               <MDBAnimation type={"fadeInRight"} delay={"0.3s"}>
                 <ContactForm/>
               </MDBAnimation>

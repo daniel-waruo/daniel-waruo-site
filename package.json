@@ -12,7 +12,8 @@
     "mdbreact": "^4.26.0",
     "next": "9.3.6",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-lazy-load": "^3.0.13"
   },
   "devDependencies": {
     "dotenv-webpack": "^1.7.0",

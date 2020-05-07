@@ -43,7 +43,7 @@ class ProjectModal extends PureComponent {
       <MDBModal isOpen={open} toggle={toggle} fade size={'fluid'}>
         <MDBModalBody className={"p-1"}>
           <MDBRow>
-            <MDBCol size={"12"} lg={"8"}>
+            <MDBCol size={"12"} lg={"8"} className={"d-none d-lg-block"}>
               <ProjectCarousel images={images}/>
             </MDBCol>
             <MDBCol size={"12"} lg={"4"}>

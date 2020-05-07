@@ -12,11 +12,11 @@ class LanguageSection extends React.PureComponent {
           <NavOffset id={"programming-languages"}/>
           <h1 className={"text-center text-strong mb-5"}>Programing Languages</h1>
           <MDBRow center>
-            <MDBCol size={"6"} sm={"4"} lg={"3"} xl={"2"}>
-              <LanguageCard imageSrc={'/p-languages/python.svg'} name={"Python"}/>
-            </MDBCol>
             <MDBCol size={"6"} sm={"4"} md={"3"} lg={"2"}>
               <LanguageCard imageSrc={"/p-languages/javascript.svg"} name={"JS"}/>
+            </MDBCol>
+            <MDBCol size={"6"} sm={"4"} md={"3"} lg={"2"}>
+              <LanguageCard imageSrc={'/p-languages/python.svg'} name={"Python"}/>
             </MDBCol>
             <MDBCol size={"6"} sm={"4"} md={"3"} lg={"2"}>
               <LanguageCard imageSrc={"/p-languages/c.svg"} name={"C"}/>

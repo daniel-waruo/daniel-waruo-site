@@ -1,6 +1,6 @@
 import React from "react";
 import {MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView} from "mdbreact";
-
+import LazyLoad from 'react-lazy-load';
 import PropTypes from "prop-types"
 
 class ProjectCarousel extends React.PureComponent {
@@ -16,14 +16,19 @@ class ProjectCarousel extends React.PureComponent {
         return (
           <MDBCarouselItem itemId={itemId} key={key}>
             <MDBView>
-              <img
-                style={{
-                  height: "80vh"
-                }}
-                className="d-block w-100"
-                src={image}
-                alt={`Carousel Image ${itemId}`}
-              />
+              <LazyLoad width={"100%"}
+                        height={"80vh"}
+                        debounce={false}
+                        offsetVertical={500}>
+                <img
+                  style={{
+                    height: "80vh"
+                  }}
+                  className="d-block w-100"
+                  src={image}
+                  alt={`Carousel Image ${itemId}`}
+                />
+              </LazyLoad>
             </MDBView>
           </MDBCarouselItem>
         )
@@ -35,8 +40,7 @@ class ProjectCarousel extends React.PureComponent {
         length={carouselItems.length}
         showControls={true}
         showIndicators={true}
-        className="z-depth-1"
-      >
+        className="z-depth-1">
         <MDBCarouselInner>
           {carouselItems}
         </MDBCarouselInner>

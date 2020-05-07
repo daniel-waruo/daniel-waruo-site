@@ -12,11 +12,11 @@ class FrameWorkSection extends React.PureComponent {
           <NavOffset id={"development-frameworks"}/>
           <h1 className={"text-center text-strong mb-5"}>Development Frameworks</h1>
           <MDBRow center>
-            <MDBCol size={"6"} sm={"4"} lg={"3"} xl={"2"}>
-              <LanguageCard imageSrc={'/p-frameworks/django.svg'} name={"Python/Django"}/>
+            <MDBCol size={"6"} sm={"4"} md={"3"} lg={"2"}>
+              <LanguageCard imageSrc={'/p-frameworks/django.svg'} name={"Django"}/>
             </MDBCol>
             <MDBCol size={"6"} sm={"4"} md={"3"} lg={"2"}>
-              <LanguageCard imageSrc={"/p-frameworks/flask.svg"} name={"Python/Flask"}/>
+              <LanguageCard imageSrc={"/p-frameworks/flask.svg"} name={"Flask"}/>
             </MDBCol>
             <MDBCol size={"6"} sm={"4"} md={"3"} lg={"2"}>
               <LanguageCard imageSrc={"/p-frameworks/react.svg"} name={"React JS"}/>
