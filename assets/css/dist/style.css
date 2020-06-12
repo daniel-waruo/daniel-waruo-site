@@ -9014,50 +9014,51 @@ i.flag.zimbabwe:before {
   color: #ffc107;
 }
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 html,
 body,
 header,
 .f-view {
-  height: 100vh;
+    height: 100vh;
+    padding-bottom: 1rem;
 }
 
 @media (max-width: 740px) {
-  html,
-  body,
-  header,
-  .f-view {
-    height: 1100px;
-  }
+    html,
+    body,
+    header,
+    .f-view {
+        height: 100%;
+    }
 }
 
 @media (min-width: 800px) and (max-width: 850px) {
-  html,
-  body,
-  header,
-  .f-view {
-    height: 700px;
-  }
+    html,
+    body,
+    header,
+    .f-view {
+        height: 700px;
+    }
 }
 
 .top-nav-collapse {
-  background-color: #39448c !important;
+    background: rgb(0, 8, 36);
 }
 
 .navbar:not(.top-nav-collapse) {
-  background: rgba(57, 68, 140, 0.6) !important;
+    background: rgba(0, 0, 0, 0.6) !important;
 }
 
 @media (max-width: 991px) {
-  .navbar:not(.top-nav-collapse) {
-    background: #39448c !important;
-  }
+    .navbar:not(.top-nav-collapse) {
+        background: rgb(0, 8, 36) !important;
+    }
 }
 
 h6 {
-  line-height: 1.7;
+    line-height: 1.7;
 }
 
 /* Button Extras */
@@ -9072,8 +9073,8 @@ h6 {
     vertical-align: middle;
     cursor: pointer;
     border-radius: 50%;
-    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
-    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     width: 47px;
@@ -9093,8 +9094,8 @@ h6 {
 }
 
 .btn-floating:hover {
-    -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
 .btn-floating:before {
@@ -9121,85 +9122,18 @@ h6 {
     line-height: 61.1px
 }
 
-.fixed-action-btn {
-    position: fixed;
-    right: 35px;
-    bottom: 35px;
-    z-index: 998;
-    margin-bottom: 0;
-    overflow: hidden;
-    height: 500px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    padding: 15px 15px 15px 15px;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 15px
-}
-
-.fixed-action-btn ul {
-    position: absolute;
-    right: 0;
-    bottom: 64px;
-    left: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    height: 0;
-    padding: 0;
-    margin: 0 0 15px;
-    text-align: center;
-    -webkit-transition: 400ms all;
-    transition: 400ms all;
-    opacity: 0;
-    margin-bottom: 0
-}
-
-.fixed-action-btn ul li {
-    z-index: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-right: auto;
-    margin-bottom: 15px;
-    margin-left: auto
-}
-
-.fixed-action-btn ul a.btn-floating {
-    opacity: 0;
-    -webkit-transition-duration: .4s;
-    transition-duration: .4s;
-    -webkit-transform: scale(0.4) translate(0);
-    transform: scale(0.4) translate(0)
-}
-
-.fixed-action-btn ul a.btn-floating.shown {
-    opacity: 1;
-    -webkit-transform: scale(1) translate(0);
-    transform: scale(1) translate(0)
-}
-
-.fixed-action-btn.active ul {
-    height: 300px;
-    margin-bottom: 40px;
-    opacity: 1
-}
-
-button,html [type="button"],[type="reset"],[type="submit"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none
-}
-
 .btn-rounded {
     border-radius: 10em
+}
+
+.gradient-blue {
+    background: rgb(0, 8, 36) !important;
+    background: linear-gradient(142deg, rgba(0, 8, 36, 1) 0%, rgba(65, 9, 121, 0.5214460784313726) 54%, rgba(8, 201, 224, 0.4682247899159664) 86%) !important;
+}
+
+/* CARD IMAGE PROPERTIES*/
+
+.c-card-image {
+    height: 10rem;
 }
 

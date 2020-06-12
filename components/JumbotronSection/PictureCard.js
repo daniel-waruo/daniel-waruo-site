@@ -13,22 +13,22 @@ import {
 } from 'mdbreact'
 
 export default () => (
-  <MDBCard className={"h-100"}>
+  <MDBCard className={"h-100 gradient-blue"}>
     <MDBRow center>
-      <MDBCol size={"8"} sm={"6"}>
+      <MDBCol size={"8"} >
         <MDBCardImage overlay={"transparent"} className="img-fluid rounded-circle" src={'/cartoonMe.jpeg'}
                       alt={"Picture of Daniel Waruo King'ang'ai"} waves zoom/>
       </MDBCol>
     </MDBRow>
-    <MDBCardBody className={"text-dark bg-white"}>
+    <MDBCardBody className={"text-white"}>
       <MDBCardTitle className={"text-center"}>Daniel Waruo King'ang'ai</MDBCardTitle>
-      <MDBCardText className={"text-center"}>Software Engineer | Python Develeoper </MDBCardText>
-      <MDBCardText className={"ml-3 ml-sm-1"}>
-        <MDBIcon icon={"envelope"} className={"mx-2 black-text"}/>
+      <MDBCardText className={"text-center text-white"}>Software Engineer | Python Develeoper </MDBCardText>
+      <MDBCardText className={"ml-3 ml-sm-1 text-white"}>
+        <MDBIcon icon={"envelope"} className={"mx-2"}/>
         waruodaniel@gmail.com
       </MDBCardText>
-      <MDBCardText className={"ml-3 ml-sm-1"}>
-        <MDBIcon icon={"mobile-alt"} className={"mx-2 black-text"}/>
+      <MDBCardText className={"ml-3 ml-sm-1 text-white"}>
+        <MDBIcon icon={"mobile-alt"} className={"mx-2"}/>
         +254797792447
       </MDBCardText>
       <MDBRow center>

@@ -6,6 +6,8 @@ import AttributionSection from '../components/AttributionSection'
 import ProjectSection from '../components/ProjectSection'
 import JumbotronSection from '../components/JumbotronSection'
 import NavBar from '../components/NavBar'
+import ContactMeSection from "../components/ContactMeSection";
+import {MDBContainer} from "mdbreact";
 
 export default () => (
   <div className={"overflow-hidden"}>
@@ -15,9 +17,12 @@ export default () => (
     </Head>
     <NavBar/>
     <JumbotronSection/>
-    <ProjectSection/>
-    <LanguageSection/>
-    <FrameWorkSection/>
+    <MDBContainer>
+      <ProjectSection/>
+      <LanguageSection/>
+      <FrameWorkSection/>
+      <ContactMeSection/>
+    </MDBContainer>
     <AttributionSection/>
   </div>
 )

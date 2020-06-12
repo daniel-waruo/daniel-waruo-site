@@ -1,6 +1,6 @@
 import React from 'react';
 import {MDBAlert, MDBBtn, MDBCard, MDBCardBody, MDBIcon, MDBInput} from 'mdbreact'
-import {request} from "../../lib/request";
+import {request} from "../lib/request";
 
 export default class ContactForm extends React.PureComponent {
   state = {

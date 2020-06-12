@@ -21,9 +21,9 @@ export default class ProjectCard extends React.PureComponent {
     return (
       <>
         <ProjectModal toggle={this.toggle} open={this.state.modalOpen}  {...this.props.children}/>
-        <MDBCard className={"mb-3 h-100"} onClick={this.toggle}>
+        <MDBCard className={"mb-3"} onClick={this.toggle}>
           <div className={"h-100"}>
-            <MDBCardImage zoom className="img-fluid" src={images[0]} top/>
+            <MDBCardImage zoom className="img-fluid c-card-image" src={images[0]} top/>
           </div>
           <MDBCardBody>
             <MDBCardTitle tag={"h5"} className={"text-center grey-text"}>{name}</MDBCardTitle>

@@ -37,6 +37,18 @@ class FrameWorkSection extends React.PureComponent {
               }}
               </ProjectCard>
             </MDBCol>
+            <MDBCol size={"12"} md={"6"} lg={"4"}>
+              <ProjectCard>{{
+                name: "SendyIT Library",
+                goal:"To create a python wrapper around the sendyIT API",
+                images: ['/p-languages/python.svg'],
+                languageImages: ['python'].map(lang => `/p-languages/${lang}.svg`),
+                frameworkImages: [],
+                deliverables: ['Python Library'],
+                githubRepository:'https://github.com/daniel-waruo/python-sendyit'
+              }}
+              </ProjectCard>
+            </MDBCol>
           </MDBRow>
         </MDBContainer>
       </>
