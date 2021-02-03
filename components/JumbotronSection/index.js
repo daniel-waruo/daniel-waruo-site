@@ -12,10 +12,10 @@ export default () => {
   };
 
   return (
-    <div className={"overflow-hidden"} style={backgroundStyle}>
+    <div className={"overflow-hidden"} >
       <MDBAnimation type={"fadeIn"}>
         <div className={"view f-view"}>
-          <MDBMask overlay={""} className="flex-center gradient-blue">
+          <MDBMask overlay={""} className="flex-center">
           </MDBMask>
           <MDBRow className="h-100 mx-2" center>
             <MDBCol size={"12"} sm={"8"} md={"5"} lg={"4"}
@@ -26,13 +26,16 @@ export default () => {
             </MDBCol>
             <MDBCol size={"12"} sm={"8"} md={"7"} lg={"8"}
                     className="mt-5 pt-3 pt-md-5 my-auto">
-              <MDBCard className={"rgba-black-strong py-1"}>
-                <h1 className={"text-center white-text "}>ABOUT ME</h1>
-                <MDBCardBody tag={"p"} className={"white-text"} style={{fontSize: "1rem"}}>
-                  Hallo my name is Daniel and I love solving problems.
+              <MDBCard className={" py-1 z-depth-0"}>
+                <h1 className={"text-center"}>ABOUT ME</h1>
+                <MDBCardBody tag={"p"} style={{fontSize: "1rem"}}>
+                  I am a 3rd year student in the university pursuing a degree in Software Engineering.
+                  I love technology and the endless potential it has to solve problems and generate income
                   <hr/>
-                  I live in Nairobi,Kenya.I love meeting new people who have different perspectives as I learn
-                  a lot from them.
+                  I am outgoing, hardworking and self-driven .
+                  Traits of which have allowed me to engage in several self initialized projects
+                  throughout my time in the university and in the process developed my project management ,
+                  time management and stress management skills.
                   <hr/>
                   I love learning new things.I recently started learning spanish and through this I have gained
                   new friends as well as a whole new aspect of the world.I believe I am a global citizen and use
@@ -43,8 +46,8 @@ export default () => {
                   as Django(Python Web Framework) and React JS(Javascript UI Framework) but I am very flexible as
                   I can also use NodeJS , Word Press and legacy HTML to develop websites.
                   <hr/>
-                  Feel free to contact me at anytime through my mobile or email or send me a letter though
-                  the contact form
+                  Feel free to contact me at anytime through my mobile (+254 797792447) or email (waruodaniel@gmail.com)
+                  or send me a letter though the contact form or chat with me on the online messenger on the bottom left of the screen.
                 </MDBCardBody>
               </MDBCard>
             </MDBCol>

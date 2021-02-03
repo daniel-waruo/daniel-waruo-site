@@ -13,23 +13,23 @@ import {
 } from 'mdbreact'
 
 export default () => (
-  <MDBCard className={"h-100 gradient-blue"}>
+  <MDBCard className={"h-100 z-depth-0"}>
     <MDBRow center>
       <MDBCol size={"8"} >
         <MDBCardImage overlay={"transparent"} className="img-fluid rounded-circle" src={'/cartoonMe.jpeg'}
                       alt={"Picture of Daniel Waruo King'ang'ai"} waves zoom/>
       </MDBCol>
     </MDBRow>
-    <MDBCardBody className={"text-white"}>
-      <MDBCardTitle className={"text-center"}>Daniel Waruo King'ang'ai</MDBCardTitle>
-      <MDBCardText className={"text-center text-white"}>Software Engineer | Python Develeoper </MDBCardText>
-      <MDBCardText className={"ml-3 ml-sm-1 text-white"}>
+    <MDBCardBody>
+      <MDBCardTitle className={"text-center text-dark"}>Daniel Waruo King'ang'ai</MDBCardTitle>
+      <MDBCardText className={"text-center"}>Software Engineer | Python Develeoper </MDBCardText>
+      <MDBCardText className={"ml-3 ml-sm-1"}>
         <MDBIcon icon={"envelope"} className={"mx-2"}/>
-        waruodaniel@gmail.com
+        <a className={"text-muted"} href="mailto:waruodaniel@gmail.com">waruodaniel@gmail.com</a>
       </MDBCardText>
-      <MDBCardText className={"ml-3 ml-sm-1 text-white"}>
+      <MDBCardText className={"ml-3 ml-sm-1"}>
         <MDBIcon icon={"mobile-alt"} className={"mx-2"}/>
-        +254797792447
+        <a className={"text-muted"} href="tel:+254797792447">+254797792447</a>
       </MDBCardText>
       <MDBRow center>
         <MDBCol>

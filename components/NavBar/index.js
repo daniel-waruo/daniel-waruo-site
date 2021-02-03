@@ -12,7 +12,7 @@ export default class NavBar extends Component {
 
   render() {
     return (
-      <MDBNavbar color="transparent" dark expand="lg" fixed={"top"} scrolling>
+      <MDBNavbar color={"white"} light expand="lg" fixed={"top"} scrolling>
         <MDBNavbarBrand>
           Daniel W. King'ang'ai
         </MDBNavbarBrand>

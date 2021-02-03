@@ -9043,19 +9043,6 @@ header,
     }
 }
 
-.top-nav-collapse {
-    background: rgb(0, 8, 36);
-}
-
-.navbar:not(.top-nav-collapse) {
-    background: rgba(0, 0, 0, 0.6) !important;
-}
-
-@media (max-width: 991px) {
-    .navbar:not(.top-nav-collapse) {
-        background: rgb(0, 8, 36) !important;
-    }
-}
 
 h6 {
     line-height: 1.7;

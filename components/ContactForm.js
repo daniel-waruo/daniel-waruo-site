@@ -45,21 +45,17 @@ export default class ContactForm extends React.PureComponent {
         </MDBAlert>
       ));
     return (
-      <MDBCard className={"h-100"}>
-        <MDBCardBody className="z-depth-2">
+      <MDBCard className={"h-100 z-depth-0"}>
+        <MDBCardBody className="z-depth-0">
           <form onSubmit={this.submitHandler} method={"POST"} id={"contact-me-form"}>
             {alertMessages}
-            <div className="text-center">
-              <h3 className="dark-grey-text">Email me:</h3>
-              <hr/>
-            </div>
             <MDBInput icon={"user"} type={"text"} label={"Your Full Name"} required group
                       value={this.state.name}
                       onChange={e => this.setState({name: e.target.value})}/>
             <MDBInput icon={"envelope"} type={"email"} label={"Your Email"} required group
                       value={this.state.email}
                       onChange={e => this.setState({email: e.target.value})}/>
-            <MDBInput icon={"pen"} type={"textarea"} rows={"4"} label={"Your Message"} required group
+            <MDBInput icon={"pen"} type={"textarea"} rows={"6"} label={"Your Message"} required group
                       value={this.state.message}
                       onChange={e => this.setState({message: e.target.value})}/>
             <div className="text-center">
