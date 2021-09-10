@@ -1,25 +1,30 @@
-## Daniel Waruo
-### Introduction
-Hallo , I am a software engineer who loves coding and building solutions to poblems.
+## Hello! I am Daniel, welcome to my github! <img src="https://camo.githubusercontent.com/e8e7b06ecf583bc040eb60e44eb5b8e0ecc5421320a92929ce21522dbc34c891/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6876524a434c467a6361737252346961377a2f67697068792e676966" width="30px" data-canonical-src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" style="max-width:100%;"> 
 
-### Programming Languages
-* Python 
-* Javascript
-* HTML 
-* CSS
+<p> In life, it takes courage to be different and a lot of competence to make a difference </p>
+<p> I’m currently learning GraphQl, NodeJs, Javascript, Typescript, React, React Native, Docker and on and on </p>
 
-### Development Frameworks
-* Django 
-* React
+<div>
+  <a href="https://github.com/daniel-waruo">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=daniel-waruo&show_icons=true&theme=dracula&include_all_commits=true&count_private=false"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=daniel-waruo&layout=compact&langs_count=7&theme=dracula"/>
+</div>
 
-### Databases
-* Postgres SQL
+<br />
+  
+![HTML Badge](https://img.shields.io/badge/-HTML-orange)
+![CSS Badge](https://img.shields.io/badge/-CSS-blue)
+![JavaScript Badge](https://img.shields.io/badge/-JavaScript-yellow)
+![ReactJS Badge](https://img.shields.io/badge/-ReactJS-blue)
+![React Native Badge](https://img.shields.io/badge/-React%20Native-purple)
+![NodeJS Badge](https://img.shields.io/badge/-Node.js-green) 
+![TypeScript Badge](https://img.shields.io/badge/-TypeScript-blue)
+![Docker](https://img.shields.io/badge/Docker-blue)
+![GraphQl](https://img.shields.io/badge/GraphQl-purple)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-blue)
+![MongoDB](https://img.shields.io/badge/MongoDB-green)
 
-### Deployment Platforms
-* Vercel
-* Heroku
-* Digital Ocean
-
-### Contacts
-* Email - waruodaniel@gmail.com
-* Phone - +254 797792447
+<div>   
+  <a href="https://instagram.com/dan.waruo" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>  
+  <a href = "mailto:waruodaniel@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>  
+  <a href="https://www.linkedin.com/in/daniel-waruo/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+</div>
