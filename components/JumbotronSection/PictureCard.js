@@ -34,7 +34,9 @@ export default () => (
       <MDBRow center>
         <MDBCol>
           <MDBAnimation type={"fadeInLeft"} delay={'0.2s'}>
-            <MDBBtn tag="a" size="sm" className={"btn-floating"} target={'_blank'}
+            <MDBBtn tag="a" size="sm"
+                    className={"btn-floating"}
+                    target={'_blank'}
                     href={"https://github.com/daniel-waruo"} color={"dark"}>
               <MDBIcon fab icon="github"/>
             </MDBBtn>

@@ -2,6 +2,6 @@ import React from 'react'
 
 export default (props) => {
   return (
-    <div style={{height:"67px"}} {...props} />
+    <div style={{height:"90px"}} {...props} />
   )
 }

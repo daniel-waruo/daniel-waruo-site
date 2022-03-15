@@ -21,7 +21,7 @@ export default class NavBar extends Component {
 
   render() {
     return (
-      <MDBNavbar color={"white"} light expand="lg" fixed={"top"} scrolling>
+      <MDBNavbar color={"white"} className={"z-depth-0"} light expand="lg" fixed={"top"} >
         <MDBNavbarBrand>
           Daniel W. King'ang'ai
         </MDBNavbarBrand>
@@ -48,8 +48,8 @@ export default class NavBar extends Component {
             </MDBNavItem>
             <MDBNavItem className={"nav-item-mobile"}>
               <a href="tel:+254797792447" className={"nav-link pt-3 waves-effect waves-light"}>
-                <MDBBtn color={"indigo"} outline>
-                  <MDBIcon far icon="phone" className="mr-1"/> Call Me (+254797792447)
+                <MDBBtn className={"rounded-pill px-3"} color={"indigo"} >
+                  <MDBIcon icon="mobile-alt" className="mr-1"/> Call Me (+254797792447)
                 </MDBBtn>
               </a>
             </MDBNavItem>
