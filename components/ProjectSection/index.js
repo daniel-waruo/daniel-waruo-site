@@ -11,7 +11,7 @@ class ProjectSection extends React.PureComponent {
       <>
         <MDBContainer className={"border-bottom pb-md-4"} fluid>
           <NavOffset id={"projects"}/>
-          <h1 className={"text-center text-strong mb-5"}>Projects</h1>
+          <h1 className={"text-center text-strong mb-5"}>What has he built ?</h1>
           <MDBRow center>
             <MDBCol size={"12"} md={"6"} lg={"4"}>
               <ProjectCard>{{

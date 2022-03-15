@@ -72,7 +72,7 @@ class LanguageSection extends React.PureComponent {
         <MDBCol size={"12"} md={"12"} >
           <MDBContainer className={"border-bottom pb-md-4"} fluid>
             <NavOffset id={"tools"}/>
-            <h1 className={"text-center text-strong mb-5"}>My Tools</h1>
+            <h1 className={"text-center text-strong mb-5"}>His Tools ?</h1>
             <MDBRow center>
               {tools.map(
                 ({logo, name}, key) => {

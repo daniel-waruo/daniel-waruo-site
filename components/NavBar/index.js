@@ -30,26 +30,26 @@ export default class NavBar extends Component {
           <MDBNavbarNav right>
             <MDBNavItem className={"nav-item-mobile"}>
               <a className={"nav-link mt-4 waves-effect waves-light"} href={"#"}>
-                <MDBIcon icon="home" className="mr-1"/>
-                Home
+                <MDBIcon icon="user" className="mr-1"/>
+                Who is he ?
               </a>
             </MDBNavItem>
             <MDBNavItem className={"nav-item-mobile"}>
               <a className={"nav-link mt-4 waves-effect waves-light"} href={"#projects"}>
-                <MDBIcon icon="code" className="mr-1"/>
-                Projects
+                <MDBIcon icon="tasks" className="mr-1"/>
+                What has he done ?
               </a>
             </MDBNavItem>
             <MDBNavItem className={"nav-item-mobile"}>
               <a className={"nav-link mt-4 waves-effect waves-light"} href={"#tools"}>
-                <MDBIcon icon="code" className="mr-1"/>
-                Tools
+                <MDBIcon icon="tools" className="mr-1"/>
+                 His Tools ?
               </a>
             </MDBNavItem>
             <MDBNavItem className={"nav-item-mobile"}>
               <a href="tel:+254797792447" className={"nav-link pt-3 waves-effect waves-light"}>
                 <MDBBtn className={"rounded-pill px-3"} color={"indigo"} >
-                  <MDBIcon icon="mobile-alt" className="mr-1"/> Call Me (+254797792447)
+                  <MDBIcon icon="mobile-alt" className="mr-1"/> Call Him (+254797792447)
                 </MDBBtn>
               </a>
             </MDBNavItem>
