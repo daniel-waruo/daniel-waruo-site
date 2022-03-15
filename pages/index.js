@@ -12,20 +12,20 @@ import NavOffset from "../components/NavOffset";
 export default () => (
   <>
     <MDBCol
-      size={"12"}
-      md={"4"}
+      size={"4"}
       top={0}
       style={{
         top: "100px",
         left: 0,
+        zIndex: 10000,
         position: "fixed"
       }}
-      className="mt-5 pt-0 mb-5 white-text text-center">
+      className="mt-5 pt-0 mb-5 white-text text-center d-none d-md-block">
       <MDBAnimation delay={"0.2"} type={"fadeInLeft"}>
         <PictureCard/>
       </MDBAnimation>
     </MDBCol>
-    <div className={"overflow-hidden"} >
+    <div className={"overflow-hidden"}>
       <Head>
         <title>Daniel Waruo - Software Engineer</title>
         <link rel="icon" href="/favicon.ico"/>
@@ -33,6 +33,13 @@ export default () => (
       <NavBar/>
       <NavOffset/>
       <MDBRow end style={{position: "relative", top: 0}}>
+        <MDBCol
+          size={"12"}
+          className="mt-5 pt-0 mb-5 white-text text-center d-block d-md-none">
+          <MDBAnimation delay={"0.2"} type={"fadeInLeft"}>
+            <PictureCard/>
+          </MDBAnimation>
+        </MDBCol>
         <MDBCol size={"12"} md={"8"}>
           <NavOffset/>
           <JumbotronSection/>
