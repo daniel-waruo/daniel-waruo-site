@@ -37,6 +37,26 @@ class ProjectSection extends React.PureComponent {
               }}
               </ProjectCard>
             </MDBCol>
+            <MDBCol size={"12"} md={"6"} lg={"4"}>
+              <ProjectCard>{{
+                name: "Patterns Online Shop",
+                goal: "To allow customers to buy goods via whatsapp",
+                integrations:['WhatsApp'],
+                images: Array.from(Array(19).keys())
+                  .map(num => num + 1)
+                  .map(
+                    num => {
+                      const ext = num < 12 ? 'png' : 'jpeg'
+                      return `/projects/patterns/${num}.${ext}`
+                    }
+                  ),
+                tools: ['django', 'next-js', 'react', 'whatsapp', 'meta'].map(frameW => `/tools/${frameW}.svg`),
+                deliverables: ['Website', 'API', 'Database','WhatApp bot'],
+                website: "https://patterns.makinika.com",
+                logo: '/projects/patterns/logo.png'
+              }}
+              </ProjectCard>
+            </MDBCol>
           </MDBRow>
         </MDBContainer>
       </>
