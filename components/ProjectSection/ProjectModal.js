@@ -59,15 +59,6 @@ class ProjectModal extends PureComponent {
                     {languagesUsed}
                   </MDBListGroup>
                 </div>
-                <div className={"pb-2"}>
-                  <h5 className={"indigo-text"}>Website</h5>
-                  <MDBListGroup className={"list-group-horizontal"}>
-                    <a href={website} target={'_blank'}>
-                      <MDBIcon icon="external-link-alt" className={"mx-2"}/>
-                      {website}
-                    </a>
-                  </MDBListGroup>
-                </div>
               </MDBContainer>
             </MDBCol>
           </MDBRow>

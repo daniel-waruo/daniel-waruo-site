@@ -15,7 +15,7 @@ class ProjectCarousel extends React.PureComponent {
         count += 1;
         return (
           <MDBCarouselItem itemId={itemId} key={key}>
-            <MDBView>
+            <MDBView className={"bg-transparent"}>
               <LazyLoad width={"auto"}
                         height={"80vh"}
                         debounce={false}
@@ -24,9 +24,10 @@ class ProjectCarousel extends React.PureComponent {
                   style={{
                     width:"auto",
                     maxWidth:"100%",
-                    height: "80vh"
+                    maxHeight: "80vh",
+                    background:"black"
                   }}
-                  className="d-block mx-auto"
+                  className="m-auto"
                   src={image}
                   alt={`Carousel Image ${itemId}`}
                 />
