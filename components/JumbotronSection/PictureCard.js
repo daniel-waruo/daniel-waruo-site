@@ -16,7 +16,7 @@ export default () => (
   <MDBCard className={"h-100 z-depth-0"}>
     <MDBRow center>
       <MDBCol size={"8"} >
-        <MDBCardImage overlay={"transparent"} className="img-fluid rounded-circle" src={'/cartoonMe.jpeg'}
+        <MDBCardImage overlay={"transparent"} className="img-fluid rounded-circle" src={'/cartoonMe.jpg'}
                       alt={"Picture of Daniel Waruo King'ang'ai"} waves zoom/>
       </MDBCol>
     </MDBRow>

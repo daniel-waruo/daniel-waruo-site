@@ -17,7 +17,7 @@ const LanguageListItem = props => {
   const {image} = props;
   return (
     <MDBListGroupItem className={"border-0"}>
-      <img width={"40rem"} height={"40rem"} src={image}/>
+      <img alt={''} width={"40rem"} height={"40rem"} src={image}/>
     </MDBListGroupItem>
   )
 };
@@ -26,12 +26,8 @@ class ProjectModal extends PureComponent {
 
   render() {
 
-    const {toggle, open, name, images, goal, deliverables, languageImages, frameworkImages, githubRepository} = this.props;
-    const languagesUsed = languageImages.map(
-      (image, key) => <LanguageListItem key={key} image={image}/>
-    );
-
-    const frameworksUsed = frameworkImages.map(
+    const {toggle, open, name, images, goal, deliverables,tools, githubRepository,website} = this.props;
+    const languagesUsed = tools.map(
       (image, key) => <LanguageListItem key={key} image={image}/>
     );
 
@@ -54,29 +50,21 @@ class ProjectModal extends PureComponent {
                   <p>{goal}</p>
                 </div>
                 <div className={"pb-2"}>
-                  <h5 className={"indigo-text"}>Deliverable</h5>
+                  <h5 className={"indigo-text"}>Deliverables</h5>
                   <ul>{deliverablesProduced}</ul>
                 </div>
-                {frameworksUsed.length === 0 ? null :
-                  <div className={"pb-2"}>
-                    <h5 className={"indigo-text"}>Development Frameworks</h5>
-                    <MDBListGroup className={"list-group-horizontal"}>
-                      {frameworksUsed}
-                    </MDBListGroup>
-                  </div>
-                }
                 <div className={"pb-2"}>
-                  <h5 className={"indigo-text"}>Programming Languages</h5>
+                  <h5 className={"indigo-text"}>Stack</h5>
                   <MDBListGroup className={"list-group-horizontal"}>
                     {languagesUsed}
                   </MDBListGroup>
                 </div>
                 <div className={"pb-2"}>
-                  <h5 className={"indigo-text"}>Source Code</h5>
+                  <h5 className={"indigo-text"}>Website</h5>
                   <MDBListGroup className={"list-group-horizontal"}>
-                    <a href={githubRepository} target={'_blank'}>
-                      <MDBIcon style={{fontSize: "1.5rem"}} fab icon="github" className={"mx-2 indigo-text"}/>
-                      {githubRepository}
+                    <a href={website} target={'_blank'}>
+                      <MDBIcon icon="external-link-alt" className={"mx-2"}/>
+                      {website}
                     </a>
                   </MDBListGroup>
                 </div>
@@ -95,8 +83,7 @@ ProjectModal.propTypes = {
   open: PropTypes.bool.isRequired,
   goal: PropTypes.string.isRequired,
   images: PropTypes.array.isRequired,
-  languageImages: PropTypes.array.isRequired,
-  frameworkImages: PropTypes.array.isRequired,
+  tools: PropTypes.array.isRequired,
   deliverables: PropTypes.array.isRequired,
   githubRepository: PropTypes.string.isRequired
 };

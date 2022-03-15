@@ -1,5 +1,5 @@
 import React from 'react';
-import {MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle} from 'mdbreact';
+import {MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBIcon} from 'mdbreact';
 import ProjectModal from "./ProjectModal";
 import PropTypes from "prop-types"
 
@@ -16,17 +16,20 @@ export default class ProjectCard extends React.PureComponent {
 
 
   render() {
-    const {images, name} = this.props.children;
+    const {name, logo, website} = this.props.children;
 
     return (
       <>
         <ProjectModal toggle={this.toggle} open={this.state.modalOpen}  {...this.props.children}/>
         <MDBCard className={"mb-3"} onClick={this.toggle}>
           <div className={"h-100"}>
-            <MDBCardImage zoom className="img-fluid c-card-image" src={images[0]} top/>
+            <MDBCardImage style={{height: "10rem", width: "auto",}} zoom className="c-card-image mx-auto" src={logo}
+                          top/>
           </div>
-          <MDBCardBody>
+          <MDBCardBody className={"text-center"}>
             <MDBCardTitle tag={"h5"} className={"text-center grey-text"}>{name}</MDBCardTitle>
+            <a href={website} target={'_blank'}><MDBIcon icon="external-link-square-alt"/> {website}</a>
+            <div/>
           </MDBCardBody>
         </MDBCard>
       </>

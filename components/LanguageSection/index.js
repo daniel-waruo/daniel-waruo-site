@@ -3,36 +3,90 @@ import {MDBCol, MDBContainer, MDBRow} from 'mdbreact'
 import LanguageCard from './LanguageCard'
 import NavOffset from '../NavOffset'
 
+const tools = [
+  {
+    name: "JS",
+    logo: "javascript.svg"
+  },
+  {
+    name: "TypeScript",
+    logo: "typescript.svg"
+  },
+  {
+    name: "Graph Ql",
+    logo: "graph-ql.svg"
+  },
+  {
+    name: "React JS",
+    logo: "react.svg"
+  },
+  {
+    name: "Adonis JS",
+    logo: "adonis.svg"
+  },
+  {
+    name: "Express JS",
+    logo: "express.svg"
+  },
+  {
+    name: "Next JS",
+    logo: "next-js.svg"
+  },
+  {
+    name: "Python",
+    logo: "python.svg"
+  },
+  {
+    name: "Django",
+    logo: "django.svg"
+  },
+  {
+    name: "Flask",
+    logo: "flask.svg"
+  },
+
+  {
+    name: "C",
+    logo: "c.svg"
+  },
+  {
+    name: "C++",
+    logo: "c-plus-plus.svg"
+  },
+  {
+    name: "Lua",
+    logo: "lua.svg"
+  },
+  {
+    name: "Java",
+    logo: "java.svg"
+  },
+
+]
+
 class LanguageSection extends React.PureComponent {
 
   render() {
     return (
-      <>
-        <MDBContainer className={"border-bottom pb-md-4"} fluid>
-          <NavOffset id={"programming-languages"}/>
-          <h1 className={"text-center text-strong mb-5"}>Programing Languages</h1>
-          <MDBRow center>
-            <MDBCol size={"6"} sm={"4"} md={"3"} lg={"2"}>
-              <LanguageCard imageSrc={"/p-languages/javascript.svg"} name={"JS"}/>
-            </MDBCol>
-            <MDBCol size={"6"} sm={"4"} md={"3"} lg={"2"}>
-              <LanguageCard imageSrc={'/p-languages/python.svg'} name={"Python"}/>
-            </MDBCol>
-            <MDBCol size={"6"} sm={"4"} md={"3"} lg={"2"}>
-              <LanguageCard imageSrc={"/p-languages/c.svg"} name={"C"}/>
-            </MDBCol>
-            <MDBCol size={"6"} sm={"4"} md={"3"} lg={"2"}>
-              <LanguageCard imageSrc={"/p-languages/c-plus-plus.svg"} name={"C++"}/>
-            </MDBCol>
-            <MDBCol size={"6"} sm={"4"} md={"3"} lg={"2"}>
-              <LanguageCard imageSrc={"p-languages/lua.svg"} name={"Lua"}/>
-            </MDBCol>
-            <MDBCol size={"6"} sm={"4"} md={"3"} lg={"2"}>
-              <LanguageCard imageSrc={"p-languages/java.svg"} name={"Java"}/>
-            </MDBCol>
-          </MDBRow>
-        </MDBContainer>
-      </>
+      <MDBRow center>
+        <MDBCol size={"12"} md={"12"} >
+          <MDBContainer className={"border-bottom pb-md-4"} fluid>
+            <NavOffset id={"tools"}/>
+            <h1 className={"text-center text-strong mb-5"}>My Tools</h1>
+            <MDBRow center>
+              {tools.map(
+                ({logo, name}, key) => {
+                  return (
+                    <MDBCol size={"6"} md={"2"} key={key}
+                            className={"px-1"}>
+                      <LanguageCard imageSrc={`/tools/${logo}`} name={name}/>
+                    </MDBCol>)
+                }
+              )}
+            </MDBRow>
+          </MDBContainer>
+        </MDBCol>
+      </MDBRow>
     )
   }
 }

@@ -16,15 +16,17 @@ class ProjectCarousel extends React.PureComponent {
         return (
           <MDBCarouselItem itemId={itemId} key={key}>
             <MDBView>
-              <LazyLoad width={"100%"}
+              <LazyLoad width={"auto"}
                         height={"80vh"}
                         debounce={false}
                         offsetVertical={500}>
                 <img
                   style={{
+                    width:"auto",
+                    maxWidth:"100%",
                     height: "80vh"
                   }}
-                  className="d-block w-100"
+                  className="d-block mx-auto"
                   src={image}
                   alt={`Carousel Image ${itemId}`}
                 />
@@ -36,6 +38,7 @@ class ProjectCarousel extends React.PureComponent {
     );
     return (
       <MDBCarousel
+        interval={2000}
         activeItem={1}
         length={carouselItems.length}
         showControls={true}

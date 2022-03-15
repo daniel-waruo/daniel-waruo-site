@@ -1,5 +1,14 @@
 import React, {Component} from "react";
-import {MDBCollapse, MDBIcon, MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBNavItem} from "mdbreact";
+import {
+  MDBBtn,
+  MDBCollapse,
+  MDBIcon,
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBNavbarNav,
+  MDBNavbarToggler,
+  MDBNavItem
+} from "mdbreact";
 
 export default class NavBar extends Component {
   state = {
@@ -20,33 +29,28 @@ export default class NavBar extends Component {
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <MDBNavbarNav right>
             <MDBNavItem className={"nav-item-mobile"}>
-              <a className={"nav-link waves-effect waves-light"} href={"#"}>
+              <a className={"nav-link mt-4 waves-effect waves-light"} href={"#"}>
                 <MDBIcon icon="home" className="mr-1"/>
                 Home
               </a>
             </MDBNavItem>
             <MDBNavItem className={"nav-item-mobile"}>
-              <a className={"nav-link waves-effect waves-light"} href={"#contact-me"}>
-                <MDBIcon far icon="envelope" className="mr-1"/>
-                Contact Me
-              </a>
-            </MDBNavItem>
-            <MDBNavItem className={"nav-item-mobile"}>
-              <a className={"nav-link waves-effect waves-light"} href={"#projects"}>
+              <a className={"nav-link mt-4 waves-effect waves-light"} href={"#projects"}>
                 <MDBIcon icon="code" className="mr-1"/>
                 Projects
               </a>
             </MDBNavItem>
             <MDBNavItem className={"nav-item-mobile"}>
-              <a className={"nav-link waves-effect waves-light"} href={"#programming-languages"}>
+              <a className={"nav-link mt-4 waves-effect waves-light"} href={"#tools"}>
                 <MDBIcon icon="code" className="mr-1"/>
-                Programming Languages
+                Tools
               </a>
             </MDBNavItem>
             <MDBNavItem className={"nav-item-mobile"}>
-              <a className={"nav-link waves-effect waves-light"} href={"#development-frameworks"}>
-                <MDBIcon icon="code" className="mr-1"/>
-                Development Frameworks
+              <a href="tel:+254797792447" className={"nav-link pt-3 waves-effect waves-light"}>
+                <MDBBtn color={"indigo"} outline>
+                  <MDBIcon far icon="phone" className="mr-1"/> Call Me (+254797792447)
+                </MDBBtn>
               </a>
             </MDBNavItem>
           </MDBNavbarNav>

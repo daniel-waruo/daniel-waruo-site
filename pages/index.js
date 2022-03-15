@@ -1,12 +1,10 @@
 import React from 'react'
 import Head from 'next/head'
 import LanguageSection from '../components/LanguageSection'
-import FrameWorkSection from '../components/FrameWorkSection'
 import AttributionSection from '../components/AttributionSection'
 import ProjectSection from '../components/ProjectSection'
 import JumbotronSection from '../components/JumbotronSection'
 import NavBar from '../components/NavBar'
-import ContactMeSection from "../components/ContactMeSection";
 import {MDBContainer} from "mdbreact";
 
 export default () => (
@@ -20,8 +18,6 @@ export default () => (
     <MDBContainer>
       <ProjectSection/>
       <LanguageSection/>
-      <FrameWorkSection/>
-      <ContactMeSection/>
     </MDBContainer>
     <AttributionSection/>
   </div>
