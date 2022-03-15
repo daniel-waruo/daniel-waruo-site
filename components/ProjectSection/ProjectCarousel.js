@@ -29,7 +29,7 @@ class ProjectCarousel extends React.PureComponent {
                   }}
                   className="m-auto"
                   src={image}
-                  alt={`Carousel Image ${itemId}`}
+                  alt={`Carousel Image  ${itemId}`}
                 />
               </LazyLoad>
             </MDBView>
