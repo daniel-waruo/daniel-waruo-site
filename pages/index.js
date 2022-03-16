@@ -17,7 +17,7 @@ export default () => (
       style={{
         top: "100px",
         left: 0,
-        zIndex: 10000,
+        zIndex: 1000,
         position: "fixed"
       }}
       className="mt-5 pt-0 mb-5 white-text text-center d-none d-md-block">
